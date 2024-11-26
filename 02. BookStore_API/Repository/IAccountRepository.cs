@@ -7,5 +7,6 @@ namespace _02._BookStore_API.Repository
     public interface IAccountRepository
     {
         Task<IdentityResult> SignUpAsync(SignUpModel signUpModel);
+        Task<string> signinAsync(SignInModel signInModel);
     }
 }
